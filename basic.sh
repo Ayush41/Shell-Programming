@@ -31,3 +31,9 @@ then
     return 0
 }
 
+# check if number is prime
+if isPrime $num; then
+    echo "$num is a prime number"
+else
+    echo "$num is not a prime number"
+fi
