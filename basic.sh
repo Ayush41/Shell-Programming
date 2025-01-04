@@ -37,3 +37,8 @@ if isPrime $num; then
 else
     echo "$num is not a prime number"
 fi
+
+
+# CMD to execute this
+cmmod +x basic.sh
+./basic.sh
