@@ -29,3 +29,15 @@ divide() {
         echo "Error: Division by zero is not allowed"
     fi
 }
+
+# Main script
+echo "Enter first number:"
+read num1
+
+echo "Enter second number:"
+read num2
+
+add $num1 $num2
+subtract $num1 $num2
+multiply $num1 $num2
+divide $num1 $num2
