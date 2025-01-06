@@ -12,7 +12,7 @@ user = ${whoami}
 echo "mkdir -p /home/$user/dir : Create a new directory named dir in the user"
 
 # 10 File commands
-echo "10 File commands"
+echo "20 File commands"
 echo "1. ls"
 echo "2. mkdir"
 echo "3. rmdir"
