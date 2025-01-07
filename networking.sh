@@ -30,6 +30,32 @@ show_connections(){
     netstat -tuln
 }
 
+# Function to download a file using wget
+download_file() {
+    echo "Enter the URL to download:"
+    read url
+    if [ -z "$url" ]; then
+        echo "URL is required. Please enter a valid URL."
+        return
+    fi
+    echo "Downloading $url..."
+    wget "$url" || echo "Failed to download from $url."
+}
+
+# Function to transfer data using curl
+transfer_data() {
+    echo "Enter the URL to transfer data:"
+    read url
+    if [ -z "$url" ]; then
+        echo "URL is required. Please enter a valid URL."
+        return
+    fi
+    echo "Transferring data from $url..."
+    curl "$url" || echo "Failed to transfer data from $url."
+}
+
+
+
 # Main menu
 
 while true; do
