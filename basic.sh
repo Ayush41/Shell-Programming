@@ -39,6 +39,17 @@ else
 fi
 
 
+# Check even or odd
+echo "Enter a number :"
+read num
+
+if[$((num%2)) -eq 0]; then
+echo "$nun is even"
+else
+    echo "$num"
+fi 
+
+
 # CMD to execute this
-cmmod +x basic.sh
-./basic.sh
+# cmmod +x basic.sh
+# ./basic.sh
