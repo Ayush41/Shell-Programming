@@ -28,9 +28,27 @@ resource "google_compute_firewall" "default" {
 	}
 
 # Create a Compute Engine Instance
+resource "google_compute_instance" "vm_instance" {
+	name = "terraform-instance"
+	machine_type = "e2-medium"
+	zone = "us-central1-a"
+	
+	boot_disk{
+     	  intitialize_params {
+	    image = "debian-cloud/debian-10"
+	}
+		}
+	
+    network_interface {
+	network = 
+	subnetwork = 
 
+	access_config {
+	# this section to give the vm an external IP address
+		}
 
-
-
+	}
+	tags = ["web"]
+}
 
 
