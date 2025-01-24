@@ -18,3 +18,9 @@ touch $LOGFILE
 
 #ping eaech host and loggin the results
 
+for host in "${HOSTS[@]}"; do
+	ping_host $host
+done
+
+echo "Ping monitoring completed. REsults are logged in $LOGFILE"
+
