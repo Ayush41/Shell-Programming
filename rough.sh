@@ -18,4 +18,5 @@ else
 echo "The number is 10 or less"
 fi
 
+sudo netstat -tuln
 
