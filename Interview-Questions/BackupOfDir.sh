@@ -14,7 +14,15 @@ TIMESTAMP = $(date + "%Y%m%d%H%M%S")
 BACKUP_FILE = "$BACKUP_DIR/backup_$TIMESTAMP.tar.gz"
 
 #Create the backup
+echo "Creating backup of $SOURCE_DIR at $BACKUP_FILE"
+tar -czf $BACKUP_FILE $SOURCE_DIR
+
 
 #Verify the backup file
+if [$? -eq 0]; then
+	echo "Backup Created Succesfully."
+else 
+	echo "Backup failed."
+fi
 
 
