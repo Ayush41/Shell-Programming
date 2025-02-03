@@ -49,6 +49,8 @@ else
     echo "$num"
 fi 
 
+echo "final output finished!"
+echo "task completed...!"
 
 # CMD to execute this
 # cmmod +x basic.sh
