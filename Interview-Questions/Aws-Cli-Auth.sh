@@ -8,4 +8,5 @@ aws configure
 
 #checking  ec2 instance is running
 
+instance_id = "xxxxx"
 
