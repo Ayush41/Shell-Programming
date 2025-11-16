@@ -108,3 +108,8 @@ gcloud logging read "resource.type=gce_instance" --limit=20
 gcloud monitoring channels list
 
 ```
+
+# 📦 Cloud Build / CI-CD
+```bash
+gcloud builds submit --tag gcr.io/$PROJECT_ID/app
+```
