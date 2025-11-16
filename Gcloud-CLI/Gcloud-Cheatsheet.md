@@ -64,3 +64,47 @@ gcloud projects add-iam-policy-binding <PROJECT_ID> \
 gcloud iam service-accounts create my-sa
 
 ```
+
+
+# 🗄️ Cloud SQL
+```bash
+gcloud sql instances create mydb
+gcloud sql instances list
+gcloud sql users create user1 --instance=mydb
+
+```
+
+# 🪄 Cloud Functions
+```bash
+gcloud functions deploy myfunc --runtime python311 --trigger-http
+gcloud functions list
+
+```
+
+# 🏃 Cloud Run
+```bash
+gcloud run deploy myservice --source .
+gcloud run services list
+
+```
+
+# 📬 Pub/Sub
+```bash
+gcloud pubsub topics create mytopic
+gcloud pubsub subscriptions create mysub --topic=mytopic
+
+```
+
+# ☸️ Kubernetes (GKE)
+```bash
+gcloud container clusters create mycluster
+gcloud container clusters get-credentials mycluster
+kubectl get nodes
+```
+
+# 📈 Logging & Monitoring
+```bash
+gcloud logging read "resource.type=gce_instance" --limit=20
+gcloud monitoring channels list
+
+```
